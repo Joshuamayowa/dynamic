@@ -106,8 +106,7 @@ export const tech = [
 export default function page() {
   const [item, setItem]  = useState('')
 
-  const filteredCourse = tech.filter(course =>course.name.toLowerCase().
-  includes(item.toLowerCase()))
+  const filteredCourse = tech.filter(course =>course.name.toLowerCase().includes(item.toLowerCase()))
 
   function onChange(e){
     return setItem(e.target.value)
